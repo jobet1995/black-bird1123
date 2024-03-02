@@ -5,8 +5,8 @@
  * Description: Initialize App
  */
 
-import './styles.css';
-import React from 'react';
+import "./styles.css";
+import React from "react";
 /**
  * This is the main App component of the Application.
  *
