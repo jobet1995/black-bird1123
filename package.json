@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --passWithNoTest",
+    "test": "react-scripts test --env=jsdom --passWithNoTests",
     "eject": "react-scripts eject",
     "docker-build": "docker build -f Docker/Dockerfile -t jobet .",
     "lint": "eslint --ext .js",
