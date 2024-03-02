@@ -27,7 +27,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "docker-build": "docker build -f Docker/Dockerfile -t jobet .",
-    "lint": "eslint ./src --ext .js",
+    "lint": "eslint --ext .js",
     "prettier": "prettier --write ."
   },
   "browserslist": [
