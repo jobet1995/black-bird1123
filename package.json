@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.33.2",
@@ -24,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --passWithNoTest",
     "eject": "react-scripts eject",
     "docker-build": "docker build -f Docker/Dockerfile -t jobet .",
     "lint": "eslint --ext .js",
