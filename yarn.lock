@@ -1939,6 +1939,11 @@
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.7.2.tgz"
   integrity sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==
 
+"@salesforce-ux/design-system@^2.23.2":
+  version "2.23.2"
+  resolved "https://registry.npmjs.org/@salesforce-ux/design-system/-/design-system-2.23.2.tgz"
+  integrity sha512-Mw6xvAC7K+66dBvqY9Uk7euUrwIEaT1J7gLfKC0VLajepAWZKVfOI+Oovc39RivO5K2zYDFD8LYNAO3wfzD1AA==
+
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.24.51.tgz"

@@ -12,7 +12,7 @@
     "plugin:react/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": "2020",
     "sourceType": "module"
   },
   "plugins": ["react"],
@@ -23,6 +23,8 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-no-literals": "off",
-    "react/jsx-newline": "off"
+    "react/jsx-newline": "off",
+    "func-style":"off",
+    "one-var": "off"
   }
 }
