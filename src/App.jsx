@@ -1,22 +1,31 @@
-/**
- * Author: Jobet P. Casquejo
- * Github: @jobet1995
- * Date: 3-2-2024
- * Description: Initialize App
- */
+import { useState, useEffect } from "react";
+import { supabase } from "./utils/supabase";
+import Auth from "./components/Auth";
 
-import "./styles.css";
-import React from "react";
-/**
- * This is the main App component of the Application.
- *
- * @return {JSX.Element} The App component
- */
-export default function App() {
+function App() {
+  const [, setUser] = useState(null);
+
+  useEffect(() => {
+    const session = supabase.auth.session();
+    setUser(session ?? null);
+
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (event, sessionFromOnChange) => {
+        const currentUser = sessionFromOnChange ?? null;
+        setUser(currentUser);
+      }
+    );
+    
+    return () => {
+      authListener.unsubscribe();
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox v2</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="min-w-full min-h-screen flex items-center justify-center bg-gray-200">
+      {! ? <Auth/> : <Home={}/>}
     </div>
   );
 }
+
+export default App;

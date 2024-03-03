@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/runtime": "7.13.8",
+    "@salesforce-ux/design-system": "^2.23.2",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "eslint": "^8.57.0",
